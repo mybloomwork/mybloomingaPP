@@ -104,8 +104,8 @@ def create_checkout_session(request):
             payment_method_types=['card'],
             line_items=items,
             mode='payment',
-            success_url='http://127.0.0.1:8000/cart/success/',
-            cancel_url='http://127.0.0.1:8000/cart/'
+            success_url='http://142.93.249.7:8001/cart/success/',
+            cancel_url='http://142.93.249.7:8001/cart/'
         )
         payment_intent = session.payment_intent
 
